@@ -6,7 +6,10 @@
 
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: var(--bg-color);
+  background:
+    radial-gradient(circle at top left, rgba(22, 163, 74, 0.25), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(16, 185, 129, 0.18), transparent 55%),
+    var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -14,8 +17,40 @@ body {
 /* App wrapper */
 .app-container {
   max-width: 760px;
-  margin: 32px auto;
-  padding: 20px 16px 32px;
+  margin: 40px auto;
+  padding: 24px 18px 36px;
+}
+
+.hero {
+  margin-bottom: 18px;
+}
+
+.heroBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  background: rgba(240, 253, 244, 0.9);
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.heroTitle {
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.heroSubtitle {
+  font-size: 14px;
+  color: var(--muted-text);
+  max-width: 420px;
 }
 
 .geoButton {
@@ -46,6 +81,36 @@ body {
 .geoButton:active {
   transform: translateY(0);
   box-shadow: 0 10px 26px rgba(22, 163, 74, 0.2);
+}
+
+.emptyState {
+  margin-top: 8px;
+  margin-bottom: 18px;
+  padding: 18px 16px 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px dashed rgba(34, 197, 94, 0.35);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.emptyIcon {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.emptyTitle {
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.emptyText {
+  font-size: 13px;
+  color: var(--muted-text);
+}
+
+.emptyText span {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 /* Theme variables */

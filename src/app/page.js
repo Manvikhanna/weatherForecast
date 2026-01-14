@@ -35,8 +35,20 @@ export default function Home() {
     }
   }, [coords, unit]);
 
+  const showEmptyState =
+    !data && (!forecast || forecast.length === 0) && !loading && !geoLoading && !error && !geoError;
+
   return (
     <>
+      <section className="hero">
+        <p className="heroBadge">Live weather, anywhere</p>
+        <h1 className="heroTitle">Check the forecast in seconds.</h1>
+        <p className="heroSubtitle">
+          Type a city or use your location to see current conditions and a 5-day outlook with one
+          search.
+        </p>
+      </section>
+
       <SearchBar value={city} onChange={setCity} onSearch={() => fetchWeather(city, unit)} />
       <UnitToggle unit={unit} setUnit={setUnit} />
 
@@ -44,6 +56,17 @@ export default function Home() {
       <button className="geoButton" onClick={getLocation}>
         📍 Use My Location
       </button>
+
+      {showEmptyState && (
+        <section className="emptyState">
+          <div className="emptyIcon">☁️</div>
+          <h2 className="emptyTitle">Start with a city or your current location</h2>
+          <p className="emptyText">
+            Try searching for a place like <span>London</span> or tap the location button to see
+            what the weather looks like around you.
+          </p>
+        </section>
+      )}
 
       {/* Display loaders and errors */}
       {(loading || geoLoading) && <Loader />}
