@@ -41,7 +41,9 @@ export default function Home() {
       <UnitToggle unit={unit} setUnit={setUnit} />
 
       {/* GEOLOCATION BUTTON */}
-      <button onClick={getLocation}>📍 Use My Location</button>
+      <button className="geoButton" onClick={getLocation}>
+        📍 Use My Location
+      </button>
 
       {/* Display loaders and errors */}
       {(loading || geoLoading) && <Loader />}

@@ -1,28 +1,34 @@
 .weatherCard {
   background: var(--card-bg);
-  padding: 16px;
-  border-radius: 12px;
+  padding: 18px 18px 20px;
+  border-radius: 18px;
   text-align: center;
   margin-bottom: 20px;
+  border: 1px solid var(--card-border);
+  box-shadow: var(--shadow-soft);
 }
 
 .cityName {
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 600;
+  margin-bottom: 6px;
 }
 
 .weatherIcon {
   width: 80px;
   height: 80px;
+  margin: 4px 0;
 }
 
 .temperature {
-  font-size: 42px;
+  font-size: 44px;
   font-weight: bold;
+  margin-top: 6px;
 }
 
 .condition {
-  color: #666;
+  color: var(--muted-text);
+  margin-top: 4px;
 }
 
 .weatherDetails {
@@ -33,4 +39,5 @@
 
 .detailItem {
   font-size: 14px;
+  color: var(--muted-text);
 }

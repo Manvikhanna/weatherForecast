@@ -18,7 +18,8 @@
   grid-auto-flow: column;
   gap: 12px;
   overflow-x: auto;
-  margin-top: 16px;
+  margin-top: 18px;
+  padding-bottom: 4px;
 }
 
 @media (min-width: 768px) {
