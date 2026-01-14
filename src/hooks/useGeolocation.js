@@ -1,19 +1,18 @@
-import { useState, useEffect } from "react";
+import { useState } from 'react';
 
-// Custom hook for getting user's geolocation
 export const useGeolocation = () => {
   const [coords, setCoords] = useState({ lat: null, lon: null });
-  const [error, setError] = useState("");
+  const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
   const getLocation = () => {
     if (!navigator.geolocation) {
-      setError("Geolocation not supported by your browser");
+      setError('Geolocation not supported by your browser');
       return;
     }
 
     setLoading(true);
-    setError("");
+    setError('');
 
     navigator.geolocation.getCurrentPosition(
       (position) => {
@@ -22,9 +21,9 @@ export const useGeolocation = () => {
         setLoading(false);
       },
       (err) => {
-        setError("Location permission denied or unavailable");
+        setError('Location permission denied or unavailable');
         setLoading(false);
-      }
+      },
     );
   };
 
