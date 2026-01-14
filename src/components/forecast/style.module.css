@@ -19,7 +19,9 @@
   gap: 12px;
   overflow-x: auto;
   margin-top: 18px;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.7) transparent;
 }
 
 @media (min-width: 768px) {

@@ -2,10 +2,17 @@
   background: var(--card-bg);
   padding: 18px 18px 20px;
   border-radius: 18px;
-  text-align: center;
   margin-bottom: 20px;
   border: 1px solid var(--card-border);
   box-shadow: var(--shadow-soft);
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
 }
 
 .cityName {
@@ -14,10 +21,37 @@
   margin-bottom: 6px;
 }
 
+.condition {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted-text);
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.conditionIcon {
+  font-size: 18px;
+  color: var(--accent);
+}
+
+.mainRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
 .weatherIcon {
   width: 80px;
   height: 80px;
   margin: 4px 0;
+}
+
+.tempBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .temperature {
@@ -26,9 +60,10 @@
   margin-top: 6px;
 }
 
-.condition {
-  color: var(--muted-text);
+.feelsLike {
   margin-top: 4px;
+  font-size: 13px;
+  color: var(--muted-text);
 }
 
 .weatherDetails {
@@ -40,4 +75,12 @@
 .detailItem {
   font-size: 14px;
   color: var(--muted-text);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.detailIcon {
+  font-size: 18px;
+  color: var(--accent);
 }
