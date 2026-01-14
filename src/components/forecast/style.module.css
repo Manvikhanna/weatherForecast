@@ -1,0 +1,29 @@
+/* .forecastWrapper {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .forecastWrapper {
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: unset;
+  }
+} */
+
+.wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 12px;
+  overflow-x: auto;
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: hidden;
+  }
+}

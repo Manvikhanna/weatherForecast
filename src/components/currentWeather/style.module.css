@@ -1,0 +1,36 @@
+.weatherCard {
+  background: var(--card-bg);
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cityName {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.weatherIcon {
+  width: 80px;
+  height: 80px;
+}
+
+.temperature {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.condition {
+  color: #666;
+}
+
+.weatherDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.detailItem {
+  font-size: 14px;
+}

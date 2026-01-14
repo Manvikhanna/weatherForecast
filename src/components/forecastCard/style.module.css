@@ -1,0 +1,42 @@
+/* .forecastCard {
+  min-width: 120px;
+  background: var(--card-bg);
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.forecastDate {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.forecastIcon {
+  width: 50px;
+}
+
+.forecastTemp {
+  font-size: 14px;
+  font-weight: 500;
+} */
+
+.card {
+  min-width: 130px;
+  background: var(--card-bg);
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.date {
+  font-size: 14px;
+}
+
+.icon {
+  width: 50px;
+}
+
+.temp {
+  font-size: 14px;
+  font-weight: 500;
+}

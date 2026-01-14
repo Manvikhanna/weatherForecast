@@ -1,0 +1,18 @@
+.toggleButton {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+[data-theme="dark"] .toggleButton {
+  background-color: #f5f5f5;
+  color: #121212;
+}
